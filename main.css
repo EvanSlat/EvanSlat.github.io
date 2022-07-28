@@ -1,5 +1,4 @@
 #meP {
-    border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     max-width: 30%;
@@ -45,4 +44,8 @@
 
   body{
     text-align: center;
+  }
+
+  html{
+    background-color: aqua;
   }
