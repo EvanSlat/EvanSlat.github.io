@@ -5,9 +5,44 @@
     max-width: 30%;
     height: auto;
     float: left;
+    filter: brightness(1.2) contrast(0.9);
 }
 
 #resP{
-    width: 100%;
+    width: auto;
     height: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
+
+.navBar{
+    display: flex;
+    padding: inherit;
+}
+
+.navHolder{
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #mydescription{
+    font-size: larger;
+    text-align: left;
+  }
+
+  body{
+    text-align: center;
+  }
