@@ -1,0 +1,52 @@
+<html>
+
+<head>
+  <script id="vertex-shader" type="x-shader/x-vertex">
+    #version 300 es
+    
+    in vec4 aPosition; // just some 3d positioin in general
+    //at this point it is just some variable name
+    in vec3 aColor;
+    out vec4 vColor;
+    void main()
+    {
+      gl_Position = aPosition; //defines where it is 
+      vColor = vec4(aColor,1);
+
+    }
+    </script>
+
+  <script id="fragment-shader" type="x-shader/x-fragment">
+    #version 300 es
+    
+    precision mediump float;
+    in vec4 vColor;
+    out vec4  fColor;
+    
+    void main()
+    {
+      fColor = vColor;
+    }
+    </script>
+
+  <script type="text/javascript" src="../Common/initShaders.js"></script>
+  <script type="text/javascript" src="../Common/MV.js"></script>
+  <script type="text/javascript" src="pa2.js"></script>
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1078.0" data-gr-ext-installed="">
+  <button onClick="incrementSpeed = 0">Stop Motion</button>
+  <button onClick="incrementSpeed = 0.001">start Motion</button>
+  <button onClick="degree = 0">restart</button>
+  <p id="degree_counter">1</p>
+  <div>
+      <canvas id="gl-canvas" width="1024" height="512">
+  </canvas>
+  <p>max degree if 750: the black boxes are a stadard number key pad</p>
+
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>

@@ -1,0 +1,2 @@
+mat2 constructor doesn't work correctly
+rotate() doesn't construct the correct rotation matrix - it's the transpose
